@@ -5,15 +5,17 @@
     <title>HTML Academy: Девайс</title>
   </head>
 
-  <body>
+  <body class="page">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="logo">DEVICE</a>
+        <a class="logo">Device</a>
 
         <div class="navigation-top-row">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label>
+              Поиск по сайту
+              <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+            </label>
             <button class="search-btn" type="submit">Найти</button>
           </form>
 
@@ -27,7 +29,7 @@
         <div class="navigation-bottom-row">
           <ul class="catalog">
             <li>
-              <a href="blank.html" target="_blank">Каталог товаров</a>
+              <a class="have-drop-down">Каталог товаров</a>
               <ul class="catalog-submenu">
                 <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Виртуальная реальность</a></li>
                 <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Фитнес-браслеты</a></li>
@@ -48,7 +50,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="page-content">
       <h1 class="visually-hidden">Интернет-магазин электронных гаджетов &quot;Девайс&quot;</h1>
 
       <!-- Здесь будет секция под слайдер -->
@@ -70,14 +72,14 @@
           </p>
           <p>
             Мы можем доставить ваш товар в самые отдаленные точки
-            России! DEVICE работает со многими транспортными компаниями:
+            России! <span>Device</span> работает со многими транспортными компаниями:
           </p>
           <ul class="about-us-partners">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="btn" href="blank.html" target="_blank">ПОДРОБНЕЕ О НАС</a>
+          <a class="btn" href="blank.html" target="_blank">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -89,7 +91,7 @@
           <a href="blank.html" target="_blank">
             <img src="https://via.placeholder.com/560x222" width="560" height="222" alt="Карта проезда в офис компании Девайс">
           </a>
-          <a class="btn" href="blank.html" target="_blank">НАПИШИТЕ НАМ</a>
+          <a class="btn" href="blank.html" target="_blank">Напишите нам</a>
         </section>
 
       </section>
@@ -97,31 +99,37 @@
 
     <footer class="page-footer">
       <nav class="footer-navigation">
-        <a class="footer-logo">DEVICE</a>
+        <div class="footer-top-row">
+          <a class="footer-logo">Device</a>
 
-        <ul class="footer-user-actions">
-          <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Войти</a></li>
-          <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Сравнить</a></li>
-          <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Корзина</a></li>
-        </ul>
+          <ul class="footer-user-actions">
+            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Войти</a></li>
+            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Сравнить</a></li>
+            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Корзина</a></li>
+          </ul>
+        </div>
 
-        <p>г. Москва, ул. Строителей, 15</p>
+        <div class="footer-middle-row">
+          <p>г. Москва, ул. Строителей, 15</p>
 
-        <ul class="footer-services-menu">
-          <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Доставка</a></li>
-          <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Гарантия</a></li>
-          <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Контакты</a></li>
-        </ul>
+          <ul class="footer-services-menu">
+            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Доставка</a></li>
+            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Гарантия</a></li>
+            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Контакты</a></li>
+          </ul>
 
-        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+        </div>
 
-        <ul class="social">
-          <li class="social-fb"><a href="https://www.facebook.com/" target="_blank">Фейсбук</a></li>
-          <li class="social-inst"><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
-          <li class="social-tw"><a href="https://twitter.com/" target="_blank">Твиттер</a></li>
-        </ul>
+        <div class="footer-bottom-row">
+          <ul class="social">
+            <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank">Фейсбук</a></li>
+            <li class="social-item inst"><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
+            <li class="social-item tw"><a href="https://twitter.com/" target="_blank">Твиттер</a></li>
+          </ul>
 
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Htmlacademy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Htmlacademy</a>
+        </div>
       </nav>
     </footer>
 
