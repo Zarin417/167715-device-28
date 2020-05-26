@@ -20,9 +20,9 @@
           </form>
 
           <ul class="user-actions">
-            <li class="user-actions-item"><a href="blank.html" target="_blank">Войти</a></li>
-            <li class="user-actions-item"><a href="blank.html" target="_blank">Сравнить</a></li>
-            <li class="user-actions-item"><a href="blank.html" target="_blank">Корзина</a></li>
+            <li class="user-actions-item"><a href="#">Войти</a></li>
+            <li class="user-actions-item"><a href="#">Сравнить</a></li>
+            <li class="user-actions-item"><a href="#">Корзина</a></li>
           </ul>
         </div>
 
@@ -31,20 +31,20 @@
             <li>
               <a class="have-drop-down">Каталог товаров</a>
               <ul class="catalog-submenu">
-                <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Виртуальная реальность</a></li>
-                <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Фитнес-браслеты</a></li>
-                <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Квадрокоптеры</a></li>
+                <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
                 <li class="catalog-submenu-item"><a href="catalog_monopods.html">Моноподы для селфи</a></li>
-                <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Умные часы</a></li>
-                <li class="catalog-submenu-item"><a href="blank.html" target="_blank">Экшн-камеры</a></li>
+                <li class="catalog-submenu-item"><a href="#">Умные часы</a></li>
+                <li class="catalog-submenu-item"><a href="#">Экшн-камеры</a></li>
               </ul>
             </li>
           </ul>
 
           <ul class="services-menu">
-            <li class="services-menu-item"><a href="blank.html" target="_blank">Доставка</a></li>
-            <li class="services-menu-item"><a href="blank.html" target="_blank">Гарантия</a></li>
-            <li class="services-menu-item"><a href="blank.html" target="_blank">Контакты</a></li>
+            <li class="services-menu-item"><a href="#">Доставка</a></li>
+            <li class="services-menu-item"><a href="#">Гарантия</a></li>
+            <li class="services-menu-item"><a href="#">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -59,7 +59,9 @@
 
         <ul class="slider-products-list">
           <li class="slider-products-item slide-1 active">
-            <img src="img/slider_top_monopod.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            <div class="slider-img-wrapper">
+              <img src="img/slider_top_monopod.png" width="384" height="486" alt="Самая длинная палка для селфи">
+            </div>
             <div class="slider-products-description">
               <b>Делай селфи, как Бен Стиллер!</b>
               <p>
@@ -84,7 +86,9 @@
           </li>
 
           <li class="slider-products-item slide-2">
-            <img src="img/slider_top_watch.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+            <div class="slider-img-wrapper">
+              <img src="img/slider_top_watch.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+            </div>
             <div class="slider-products-description">
               <b>Худеем правильно!</b>
               <p>
@@ -105,7 +109,9 @@
           </li>
 
           <li class="slider-products-item slide-3">
-            <img src="img/slider_top_drone.png" width="526" height="334" alt="Квадрокоптер оснащенный лазером">
+            <div class="slider-img-wrapper">
+              <img src="img/slider_top_drone.png" width="526" height="334" alt="Квадрокоптер оснащенный лазером">
+            </div>
             <div class="slider-products-description">
               <b>Порхает как бабочка, жалит как пчела!</b>
               <p>
@@ -141,7 +147,7 @@
 
         <ul class="popular-categories-list">
           <li class="popular-categories-item">
-            <a href="blank.html" target="_blank">Виртуальная реальность</a>
+            <a href="#">Виртуальная реальность</a>
           </li>
 
           <li class="popular-categories-item">
@@ -149,19 +155,19 @@
           </li>
 
           <li class="popular-categories-item">
-            <a href="blank.html" target="_blank">Экшн-камеры</a>
+            <a href="#">Экшн-камеры</a>
           </li>
 
           <li class="popular-categories-item">
-            <a href="blank.html" target="_blank">Фитне-браслеты</a>
+            <a href="#">Фитнес-браслеты</a>
           </li>
 
           <li class="popular-categories-item">
-            <a href="blank.html" target="_blank">Умные часы</a>
+            <a href="#">Умные часы</a>
           </li>
 
           <li class="popular-categories-item">
-            <a href="blank.html" target="_blank">Квадрокоптеры</a>
+            <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -171,7 +177,7 @@
         <h2 class="visually-hidden">Наши услуги</h2>
 
         <ul class="slider-services-list">
-          <li class="slider-services-item">
+          <li class="slider-services-item active">
             <a class="btn" href="#">Доставка</a>
           </li>
 
@@ -185,7 +191,7 @@
         </ul>
 
         <ul class="slider-services-descriptions">
-          <li class="slider-services-descriptions-item">
+          <li class="slider-services-descriptions-item active">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -262,7 +268,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="btn" href="blank.html" target="_blank">Подробнее о нас</a>
+          <a class="btn" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -271,10 +277,10 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a href="blank.html" target="_blank">
+          <a href="#">
             <img src="img/map.png" width="560" height="222" alt="Карта проезда в офис компании Девайс">
           </a>
-          <a class="btn" href="blank.html" target="_blank">Напишите нам</a>
+          <a class="btn" href="#">Напишите нам</a>
         </section>
 
       </section>
@@ -286,9 +292,9 @@
           <a class="footer-logo">Device</a>
 
           <ul class="footer-user-actions">
-            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Войти</a></li>
-            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Сравнить</a></li>
-            <li class="footer-user-actions-item"><a href="blank.html" target="_blank">Корзина</a></li>
+            <li class="footer-user-actions-item"><a href="#">Войти</a></li>
+            <li class="footer-user-actions-item"><a href="#">Сравнить</a></li>
+            <li class="footer-user-actions-item"><a href="#">Корзина</a></li>
           </ul>
         </div>
 
@@ -296,9 +302,9 @@
           <p>г. Москва, ул. Строителей, 15</p>
 
           <ul class="footer-services-menu">
-            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Доставка</a></li>
-            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Гарантия</a></li>
-            <li class="footer-services-menu-item"><a href="blank.html" target="_blank">Контакты</a></li>
+            <li class="footer-services-menu-item"><a href="#">Доставка</a></li>
+            <li class="footer-services-menu-item"><a href="#">Гарантия</a></li>
+            <li class="footer-services-menu-item"><a href="#">Контакты</a></li>
           </ul>
 
           <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
