@@ -59,11 +59,94 @@
         <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
       </ul>
 
-      <!-- Здесь будет секция с фильтрами -->
+      <!-- Фильтры каталога -->
+      <section class="filter">
+        <h2 class="filter-title">Фильтр:</h2>
 
-      <!-- Сортировка -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-field cost">
+            <legend>Стоимость</legend>
 
+            <div class="cost-slider">
+              <div class="cost-slider-wrapper">
+                <button class="cost-slider-btn min" type="button" name="min">Минимальное значение</button>
+                <button class="cost-slider-btn max" type="button" name="max">Максимальное значение</button>
+              </div>
+              <span class="cost-slider-text">от 0</span>
+              <span class="cost-slider-text">до 5000</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-field color">
+            <legend>Цвет</legend>
+
+            <label>
+              <input type="checkbox" name="color" value="Black" checked>
+              Черный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="White">
+              Белый
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="Blue" checked>
+              Синий
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="Red" checked>
+              Красный
+            </label>
+            <label>
+              <input type="checkbox" name="color" value="Pink">
+              Розовый
+            </label>
+          </fieldset>
+
+          <fieldset class="filter-field bluetooth">
+            <legend>Bluetooth</legend>
+
+            <label>
+              <input type="radio" name="bluetooth" value="true" checked>
+              Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="false">
+              Нет
+            </label>
+          </fieldset>
+
+          <button class="btn" type="submit" name="show">Показать</button>
+        </form>
+      </section>
+
+      <!-- Каталог товаров с сортировкой -->
       <section class="products-catalog">
+        <div class="sorting">
+          <h2 class="sorting-title">Сортировка:</h2>
+
+          <ul class="sorting-list">
+            <li class="sorting-item">
+              <button class="sorting-btn" type="button" name="by-price">По цене</button>
+            </li>
+
+            <li class="sorting-item">
+              <button class="sorting-btn" type="button" name="by-type">По типу</button>
+            </li>
+
+            <li class="sorting-item">
+              <button class="sorting-btn" type="button" name="by-popularity">По популярности</button>
+            </li>
+
+            <li class="sorting-item">
+              <button class="sorting-arrow" type="button" name="ascending">По возрастанию</button>
+            </li>
+
+            <li class="sorting-item">
+              <button class="sorting-arrow" type="button" name="descending">По убыванию</button>
+            </li>
+          </ul>
+        </div>
+
         <h2 class="visually-hidden">Товары категории моноподы для селфи</h2>
 
         <ul class="product-items">
@@ -129,16 +212,39 @@
               </figcaption>
             </figure>
 
-            <div class="product-hover-btns">
-              <button class="btn" type="button" name="to-basket">В корзину</button>
-              <button type="button" name="to-compare">Добавить к сравнению</button>
-            </div>
+            <ul class="product-hover-btns">
+              <li class="product-hover-btn">
+                <button class="btn" type="button" name="to-basket">В корзину</button>
+              </li>
+              <li class="product-hover-btn">
+                <button type="button" name="to-compare">Добавить к сравнению</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <button class="pagination-btn" type="button" name="back">Назад</button>
+          </li>
+
+          <li class="pagination-item">
+            <a href="#" aria-label="Страница №1">1</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="#" aria-label="Страница №2">2</a>
+          </li>
+
+          <li class="pagination-item">
+            <a href="#" aria-label="Страница №3">3</a>
+          </li>
+
+          <li class="pagination-item">
+            <button class="pagination-btn" type="button" name="forward">Вперед</button>
           </li>
         </ul>
       </section>
-
-      <!-- Здесь будет секция пагинатора -->
-
     </main>
 
     <footer class="page-footer">
