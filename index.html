@@ -278,7 +278,7 @@
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <a href="#">
-            <img src="img/map.png" width="560" height="222" alt="Карта проезда в офис компании Девайс">
+            <img src="img/map-small.png" width="560" height="222" alt="Карта проезда в офис компании Девайс">
           </a>
           <a class="btn" href="#">Напишите нам</a>
         </section>
@@ -322,7 +322,41 @@
       </nav>
     </footer>
 
-    <!-- Здесь будут секции поп-апов -->
+    <!-- Секции поп-апов -->
+    <section class="write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
 
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Ваше имя:
+            <input type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Ваш e-mail:
+            <input type="email" name="user-email" placeholder="email@example.com" required>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Текст письма:
+            <textarea name="letter-content" rows="8" cols="50" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button class="letter-btn" type="submit" name="send-letter">Отправить</button>
+      </form>
+      <button class="btn-close" type="button" name="close">Закрыть</button>
+    </section>
+
+    <section class="pop-up-map">
+      <h2 class="visually-hidden">Карта проезда</h2>
+
+      <img src="img/map-big.png" width="994" height="593" alt="Карта проезда в офис компании Девайс">
+      <button class="btn-close" type="button" name="close">Закрыть</button>
+    </section>
   </body>
 </html>
