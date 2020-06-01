@@ -1,0 +1,303 @@
+/*Переменные цвета*/
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-white: #ffffff;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+
+  --special-yellow: #f7e296;
+  --special-green: #91c92f;
+  --special-yellow-dark: #f0c52e;
+
+  --status: #f6dada;
+}
+
+/*Шрифты*/
+@font-face {
+  font-family: 'Gilroy';
+  src:
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src:
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Прячем доступно*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Глобальные стили*/
+.page {
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: var(--basic-black);
+
+  background-color: var(--basic-white);
+}
+
+.page a {
+  color: var(--basic-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page ul {
+  list-style: none;
+}
+
+/*Глобальные стили кнопок*/
+.btn {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  opacity: 0.3;
+}
+
+/*Шапка сайта*/
+.main-navigation a:visited {
+  opacity: 0.3;
+}
+
+.main-navigation a:hover {
+  opacity: 0.6;
+}
+
+.main-navigation a:active {
+  opacity: 0.3;
+}
+
+.navigation-bottom-row .have-drop-down,
+.services-menu-item a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+/*Слайдер топ-товаров*/
+.slider-products-description b {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.slider-products-characteristics td,
+.slider-products-characteristics th {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 300;
+}
+
+.slider-products-characteristics td {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.slider-products-characteristics th {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+/*Дублирующее меню каталога*/
+.popular-categories a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+/*Слайдер услуг*/
+.slider-services-item.active a {
+  color: var(--special-yellow);
+  background-color: var(--basic-black);
+}
+
+.slider-services-item.active a:active {
+  opacity: 1;
+}
+
+.slider-services-descriptions h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.slider-services-descriptions p {
+  line-height: 28px;
+}
+
+/*Информация о компании*/
+.company-info h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.company-info p {
+  line-height: 28px;
+}
+
+.about-us .uppercase {
+  text-transform: uppercase;
+}
+
+.about-us-partners {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 28px;
+}
+
+/*Футер*/
+.page-footer,
+.page-footer a {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
+
+.footer-user-actions-item a {
+  opacity: 0.7;
+}
+
+.footer-user-actions-item a:hover {
+  opacity: 1;
+}
+
+.footer-user-actions-item a:active {
+  opacity: 0.3;
+}
+
+.footer-services-menu-item a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.footer-services-menu-item a:hover {
+  opacity: 0.6;
+}
+
+.footer-services-menu-item a:active {
+  opacity: 0.3;
+}
+
+                                                  /*КАТАЛОГ*/
+
+.page-content h1 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
+}
+
+.breadcrumbs a[href]:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a[href]:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs a:not([href]) {
+  cursor: text;
+}
+
+/*Фильтр*/
+.filter h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+}
+
+.filter-form label {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/*Сортировка*/
+.sorting h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.sorting-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 0.3;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.sorting-btn:not(.active):hover {
+  opacity: 0.6;
+}
+
+.sorting-btn.active {
+  opacity: 1;
+}
+

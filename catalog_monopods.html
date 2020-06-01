@@ -2,10 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс-каталог товаров</title>
   </head>
+
   <body class="page">
-    <header>
+    <header class="page-header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">Device</a>
 
@@ -61,7 +65,7 @@
 
       <!-- Фильтры каталога -->
       <section class="filter">
-        <h2 class="filter-title">Фильтр:</h2>
+        <h2>Фильтр:</h2>
 
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-field cost">
@@ -122,11 +126,11 @@
       <!-- Каталог товаров с сортировкой -->
       <section class="products-catalog">
         <div class="sorting">
-          <h2 class="sorting-title">Сортировка:</h2>
+          <h2>Сортировка:</h2>
 
           <ul class="sorting-list">
             <li class="sorting-item">
-              <button class="sorting-btn" type="button" name="by-price">По цене</button>
+              <button class="sorting-btn active" type="button" name="by-price">По цене</button>
             </li>
 
             <li class="sorting-item">
@@ -144,7 +148,7 @@
             </li>
 
             <li class="sorting-arrow-item">
-              <button class="sorting-arrow-btn" type="button" name="descending">По убыванию</button>
+              <button class="sorting-arrow-btn active" type="button" name="descending">По убыванию</button>
             </li>
           </ul>
         </div>
