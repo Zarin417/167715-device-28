@@ -82,6 +82,10 @@
   font-weight: 800;
   line-height: 22px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn:active {
@@ -221,6 +225,10 @@
 }
 
                                                   /*КАТАЛОГ*/
+.catalog-submenu-item a:not([href]) {
+  opacity: 0.3;
+  cursor: default;
+}
 
 .page-content h1 {
   font-family: 'Gilroy', sans-serif;
@@ -244,7 +252,7 @@
 }
 
 .breadcrumbs a:not([href]) {
-  cursor: text;
+  cursor: default;
 }
 
 /*Фильтр*/
@@ -289,7 +297,7 @@
 
   background-color: transparent;
   border: none;
-
+  outline: none;
   cursor: pointer;
 }
 
@@ -301,3 +309,131 @@
   opacity: 1;
 }
 
+/*Карточки товаров*/
+.product-item h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.product-item span {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.product-hover-btns button[name="to-compare"] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  opacity: 0.5;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-hover-btns button[name="to-compare"]:hover {
+  opacity: 1;
+}
+
+.product-hover-btns button[name="to-compare"]:active {
+  opacity: 0.2;
+}
+
+/*Пагинатор*/
+.pagination-list {
+  background-color: #ebebeb;
+}
+
+.pagination-btn {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+
+  border: none;
+  background-color: #ebebeb;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-btn:active {
+  opacity: 0.3;
+}
+
+.pagination-btn.disabled {
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.pagination-item a{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  opacity: 0.3;
+}
+
+.pagination-item a:hover {
+  opacity: 0.6;
+}
+
+.pagination-item a:active {
+  opacity: 1;
+}
+
+.pagination-item.active a{
+  opacity: 1;
+  cursor: default;
+}
+
+                                  /*Временная обводка крупных блоков для построения сетки*/
+.page-header {
+  outline: 5px solid rgba(75, 255, 65, 0.5);
+  outline-offset: -5px;
+}
+
+.navigation-top-row,
+.navigation-bottom-row {
+  outline: 5px solid rgba(120, 238, 255, 0.5);
+  outline-offset: -5px;
+}
+
+.search-form,
+.user-actions {
+  outline: 5px solid rgba(255, 63, 67, 0.5);
+  outline-offset: -5px;
+}
+
+.catalog,
+.services-menu {
+  outline: 5px solid rgba(255, 63, 67, 0.5);
+  outline-offset: -5px;
+}
+
+
+
+.page-content {
+  outline: 5px solid rgba(255, 104, 181, 0.5);
+  outline-offset: -5px;
+}
+
+.page-footer {
+  outline: 5px solid rgba(75, 255, 65, 0.5);
+  outline-offset: -5px;
+}
+
+.write-us,
+.pop-up-map {
+  outline: 5px solid rgba(255, 244, 85, 0.5);
+  outline-offset: -5px;
+}
