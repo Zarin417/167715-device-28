@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -8,10 +8,12 @@
     <title>HTML Academy: Девайс</title>
   </head>
 
-  <body class="page">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="logo">Device</a>
+        <a class="logo index">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
 
         <div class="navigation-top-row">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -33,7 +35,7 @@
           <ul class="catalog">
             <li>
               <a class="have-drop-down">Каталог товаров</a>
-              <ul class="catalog-submenu ">
+              <ul class="catalog-submenu visually-hidden">
                 <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
                 <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
                 <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
@@ -66,73 +68,79 @@
               <img src="img/slider_top_monopod.png" width="384" height="486" alt="Самая длинная палка для селфи">
             </div>
             <div class="slider-products-description">
-              <b>Делай селфи, как Бен Стиллер!</b>
+              <b>
+                Делай селфи,<br>
+                как Бен Стиллер!
+              </b>
               <p>
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <a class="btn" href="#">Подробнее</a>
-              <table class="slider-products-characteristics">
-                <tbody>
-                  <tr>
-                    <td>8,5 м</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr>
-                    <th>Длина палки</th>
-                    <th>Вес палки</th>
-                    <th>Материал</th>
-                  </tr>
-                </tbody>
-              </table>
+              <dl class="slider-products-characteristics">
+                <div>
+                  <dt>8,5 м</dt>
+                  <dd>Длина палки</dd>
+                </div>
+
+                <div>
+                  <dt>5 кг</dt>
+                  <dd>Вес палки</dd>
+                </div>
+
+                <div>
+                  <dt>Карбон</dt>
+                  <dd>Материал</dd>
+                </div>
+              </dl>
             </div>
           </li>
 
-          <li class="slider-products-item slide-2">
-            <div class="slider-img-wrapper">
-              <img src="img/slider_top_watch.png" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+          <li class="slider-products-item slide-2 visually-hidden">
+            <div class="slider-img-wrapper slide-2">
+              <img src="img/slider_top_watch.png" width="345" height="483" alt="Мотивирующий фитнес-браслет">
             </div>
-            <div class="slider-products-description">
-              <b>Худеем правильно!</b>
+            <div class="slider-products-description slide-2">
+              <b>
+                Худеем<br>
+                правильно!
+              </b>
               <p>
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
               <a class="btn" href="#">Подробнее</a>
-              <table class="slider-products-characteristics">
-                <tbody>
-                  <tr>
-                    <td>48 часов</td>
-                  </tr>
-                  <tr>
-                    <th>Без подзарядки</th>
-                  </tr>
-                </tbody>
-              </table>
+              <dl class="slider-products-characteristics">
+                <div>
+                  <dt>48 часов</dt>
+                  <dd>Без подзарядки</dd>
+                </div>
+              </dl>
             </div>
           </li>
 
-          <li class="slider-products-item slide-3">
-            <div class="slider-img-wrapper">
+          <li class="slider-products-item slide-3 visually-hidden">
+            <div class="slider-img-wrapper slide-3">
               <img src="img/slider_top_drone.png" width="526" height="334" alt="Квадрокоптер оснащенный лазером">
             </div>
-            <div class="slider-products-description">
-              <b>Порхает как бабочка, жалит как пчела!</b>
+            <div class="slider-products-description slide-3">
+              <b>
+                Порхает как бабочка,<br>
+                жалит как пчела!
+              </b>
               <p>
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
               <a class="btn" href="#">Подробнее</a>
-              <table class="slider-products-characteristics">
-                <tbody>
-                  <tr>
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr>
-                    <th>Дальность полета</th>
-                    <th>Радиус поражения</th>
-                  </tr>
-                </tbody>
-              </table>
+              <dl class="slider-products-characteristics slide-3">
+                <div>
+                  <dt>800 м</dt>
+                  <dd>Дальность полета</dd>
+                </div>
+
+                <div>
+                  <dt>50 м</dt>
+                  <dd>Радиус поражения</dd>
+                </div>
+              </dl>
             </div>
           </li>
         </ul>
@@ -326,7 +334,7 @@
     </footer>
 
     <!-- Секции поп-апов -->
-    <section class="write-us">
+    <section class="write-us visually-hidden">
       <h2 class="visually-hidden">Напишите нам</h2>
 
       <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -355,7 +363,7 @@
       <button class="btn-close" type="button" name="close">Закрыть</button>
     </section>
 
-    <section class="pop-up-map">
+    <section class="pop-up-map visually-hidden">
       <h2 class="visually-hidden">Карта проезда</h2>
 
       <img src="img/map-big.png" width="994" height="593" alt="Карта проезда в офис компании Девайс">

@@ -47,7 +47,16 @@
 
 /*Глобальные стили*/
 .page {
+  height: 100%;
+}
+
+.page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   min-width: 1200px;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 
@@ -60,18 +69,18 @@
   background-color: var(--basic-white);
 }
 
-.page a {
+.page-body a {
   color: var(--basic-black);
   text-decoration: none;
   cursor: pointer;
 }
 
-.page img {
+.page-body img {
   max-width: 100%;
   height: auto;
 }
 
-.page ul {
+.page-body ul {
   list-style: none;
 }
 
@@ -93,6 +102,28 @@
 }
 
 /*Шапка сайта*/
+.page-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-right: 20px;
+
+  padding-left: 20px;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  align-content: start;
+
+  position: relative;
+
+  padding-top: 44px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  background-color: var(--special-yellow);
+}
 .main-navigation a:visited {
   opacity: 0.3;
 }
@@ -105,37 +136,232 @@
   opacity: 0.3;
 }
 
-.navigation-bottom-row .have-drop-down,
+.logo.index,
+.logo.index:hover,
+.logo.index:active {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+
+  opacity: 1;
+  cursor: default;
+}
+
+.navigation-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.user-actions {
+  display: flex;
+
+  min-width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.user-actions-item:first-child {
+  padding-left: 24px;
+  margin-right: 214px;
+}
+
+.user-actions-item:nth-child(2) {
+  padding-left: 26px;
+  margin-right: 43px;
+}
+
+.user-actions-item:last-child {
+  padding-left: 22px;
+}
+
+.navigation-bottom-row {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  padding-top: 47px;
+  padding-bottom: 164px;
+}
+
+.catalog,
+.services-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.have-drop-down,
 .services-menu-item a {
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
 }
 
+.have-drop-down {
+  padding-right: 38px;
+}
+
+.services-menu {
+  display: flex;
+  align-items: start;
+}
+
+.services-menu-item a {
+  letter-spacing: 3.1px;
+}
+
+.services-menu-item:first-child {
+  margin-right: 38px;
+}
+
+.services-menu-item:nth-child(2) {
+  margin-right: 111px;
+}
+
 /*Слайдер топ-товаров*/
+.page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-products {
+  position:  relative;
+
+  width: 1160px;
+  min-height: 476px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.slider-products-list {
+  position: absolute;
+  top: -131px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.slider-products-item {
+  display: flex;
+  justify-content: start;
+}
+
+.slider-img-wrapper {
+  width: 384px;
+  height: 486px;
+  margin-left: 88px;
+  margin-right: 127px;
+}
+
+.slider-img-wrapper.slide-2 {
+  width: 345px;
+  height: 483px;
+  margin-right: 100px;
+  padding-top: 28px;
+  padding-left: 28px;
+}
+
+.slider-img-wrapper.slide-3 {
+  width: 526px;
+  height: 334px;
+  margin-top: 85px;
+  margin-right: 44px;
+  margin-left: 30px;
+
+}
+
+.slider-products-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  width: 500px;
+  padding-top: 94px;
+}
+
 .slider-products-description b {
+  width: 431px;
+  margin-bottom: 30px;
+
   font-family: 'Gilroy', sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 58px;
 }
 
-.slider-products-characteristics td,
-.slider-products-characteristics th {
+.slider-products-description.slide-3 b {
+  width: 495px;
+  margin-bottom: 28px;
+}
+
+.slider-products-description p {
+  width: 478px;
+  margin: 0;
+  margin-bottom: 49px;
+  padding: 0;
+}
+
+.slider-products-description.slide-2 p {
+  width: 450px;
+}
+
+.slider-products-description.slide-3 p {
+  width: 470px;
+}
+
+.slider-products-description a {
+  width: 220px;
+  height: 40px;
+  margin-bottom: 52px;
+  line-height: 40px;
+  letter-spacing: 3.1px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.slider-products-characteristics {
+  display: flex;
+  justify-content: start;
+
+  margin: 0;
+  padding: 0;
+
   font-family: 'Gilroy', sans-serif;
   font-weight: 300;
+
 }
 
-.slider-products-characteristics td {
+.slider-products-characteristics div:not(:last-child) {
+  margin-right: 65px;
+}
+
+.slider-products-characteristics.slide-3 div:first-child {
+  margin-right: 28px;
+}
+
+.slider-products-characteristics dt {
+  margin-bottom: 15px;
   font-size: 36px;
   line-height: 42px;
+  letter-spacing: 3.3px;
 }
 
-.slider-products-characteristics th {
+.slider-products-characteristics dd {
+  margin: 0;
   font-size: 13px;
   line-height: 15px;
+  letter-spacing: 1.2px;
+}
+
+.slider-products-controls {
+  position: absolute;
+  bottom: 250px;
+  right: 41px;
 }
 
 /*Дублирующее меню каталога*/
@@ -387,53 +613,10 @@
   opacity: 0.6;
 }
 
-.pagination-item a:active {
-  opacity: 1;
+.pagination-item a:active {  opacity: 1;
 }
 
 .pagination-item.active a{
   opacity: 1;
   cursor: default;
-}
-
-                                  /*Временная обводка крупных блоков для построения сетки*/
-.page-header {
-  outline: 5px solid rgba(75, 255, 65, 0.5);
-  outline-offset: -5px;
-}
-
-.navigation-top-row,
-.navigation-bottom-row {
-  outline: 5px solid rgba(120, 238, 255, 0.5);
-  outline-offset: -5px;
-}
-
-.search-form,
-.user-actions {
-  outline: 5px solid rgba(255, 63, 67, 0.5);
-  outline-offset: -5px;
-}
-
-.catalog,
-.services-menu {
-  outline: 5px solid rgba(255, 63, 67, 0.5);
-  outline-offset: -5px;
-}
-
-
-
-.page-content {
-  outline: 5px solid rgba(255, 104, 181, 0.5);
-  outline-offset: -5px;
-}
-
-.page-footer {
-  outline: 5px solid rgba(75, 255, 65, 0.5);
-  outline-offset: -5px;
-}
-
-.write-us,
-.pop-up-map {
-  outline: 5px solid rgba(255, 244, 85, 0.5);
-  outline-offset: -5px;
 }

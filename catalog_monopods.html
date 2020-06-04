@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -8,10 +8,12 @@
     <title>HTML Academy: Девайс-каталог товаров</title>
   </head>
 
-  <body class="page">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="logo" href="index.html">Device</a>
+        <a class="logo" href="index.html">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+        </a>
 
         <div class="navigation-top-row">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -34,7 +36,7 @@
           <ul class="catalog">
             <li>
               <a class="have-drop-down">Каталог товаров</a>
-              <ul class="catalog-submenu">
+              <ul class="catalog-submenu visually-hidden">
                 <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
                 <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
                 <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
