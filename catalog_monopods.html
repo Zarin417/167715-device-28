@@ -1,69 +1,73 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Девайс-каталог товаров</title>
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="page-body">
+  <body class="page">
     <header class="page-header">
-      <nav class="main-navigation">
-        <a class="logo" href="index.html">
-          <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
-        </a>
+      <div class="container">
+        <nav class="main-navigation inner-page">
+          <a class="logo" href="index.html">
+            <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+          </a>
 
-        <div class="navigation-top-row">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <label>
-              Поиск по сайту
-              <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            </label>
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
+          <div class="navigation-top-row">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label>
+                <span class="visually-hidden">Поиск по сайту</span>
+                <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+              </label>
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
 
-          <ul class="user-actions catalog-page">
-            <li class="user-actions-item catalog-page"><a href="#">Валентин Петухов</a></li>
-            <li class="user-actions-item catalog-page"><a href="#">Выйти</a></li>
-            <li class="user-actions-item catalog-page"><a href="#">Сравнить</a></li>
-            <li class="user-actions-item catalog-page"><a href="#">Корзина</a></li>
-          </ul>
-        </div>
+            <ul class="user-actions">
+              <li class="user-actions-item"><a href="#">Валентин Петухов</a></li>
+              <li class="user-actions-item user-in"><a href="#">Выйти</a></li>
+              <li class="user-actions-item"><a href="#">Сравнить</a></li>
+              <li class="user-actions-item"><a href="#">Корзина</a></li>
+            </ul>
+          </div>
 
-        <div class="navigation-bottom-row catalog-page">
-          <ul class="catalog">
-            <li>
-              <a class="have-drop-down">Каталог товаров</a>
-              <ul class="catalog-submenu visually-hidden">
-                <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
-                <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
-                <li class="catalog-submenu-item"><a>Моноподы для селфи</a></li>
-                <li class="catalog-submenu-item"><a href="#">Умные часы</a></li>
-                <li class="catalog-submenu-item"><a href="#">Экшн-камеры</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div class="navigation-bottom-row">
+            <ul class="catalog">
+              <li>
+                <a class="have-drop-down">Каталог товаров</a>
+                <ul class="catalog-submenu visually-hidden">
+                  <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
+                  <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
+                  <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
+                  <li class="catalog-submenu-item"><a>Моноподы для селфи</a></li>
+                  <li class="catalog-submenu-item"><a href="#">Умные часы</a></li>
+                  <li class="catalog-submenu-item"><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+            </ul>
 
-          <ul class="services-menu">
-            <li class="services-menu-item"><a href="#">Доставка</a></li>
-            <li class="services-menu-item"><a href="#">Гарантия</a></li>
-            <li class="services-menu-item"><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-      </nav>
+            <ul class="services-menu">
+              <li class="services-menu-item"><a href="#">Доставка</a></li>
+              <li class="services-menu-item"><a href="#">Гарантия</a></li>
+              <li class="services-menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-content">
-      <h1>Моноподы для селфи</h1>
+      <div class="container">
+        <h1>Моноподы для селфи</h1>
 
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
-      </ul>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
+          <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
+        </ul>
+      </div>
 
       <!-- Фильтры каталога -->
       <section class="filter">
@@ -256,40 +260,52 @@
     </main>
 
     <footer class="page-footer">
-      <nav class="footer-navigation">
-        <div class="footer-top-row">
-          <a class="footer-logo" href="index.html">Device</a>
+      <div class="container">
+        <nav class="footer-navigation">
+          <div class="footer-top-row">
+            <a class="logo footer-logo inner-page" href="index.html">
+              <img src="img/logo_footer.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
+            </a>
 
-          <ul class="footer-user-actions">
-            <li class="footer-user-actions-item"><a href="#">Валентин Петухов</a></li>
-            <li class="footer-user-actions-item"><a href="#">Выйти</a></li>
-            <li class="footer-user-actions-item"><a href="#">Сравнить</a></li>
-            <li class="footer-user-actions-item"><a href="#">Корзина</a></li>
-          </ul>
-        </div>
+            <ul class="footer-user-actions">
+              <li class="footer-user-actions-item user-in"><a href="#">Валентин Петухов</a></li>
+              <li class="footer-user-actions-item user-in"><a href="#">Выйти</a></li>
+              <li class="footer-user-actions-item"><a href="#">Сравнить</a></li>
+              <li class="footer-user-actions-item"><a href="#">Корзина</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-middle-row">
-          <p>г. Москва, ул. Строителей, 15</p>
+          <div class="footer-middle-row">
+            <p>г. Москва, ул. Строителей, 15</p>
 
-          <ul class="footer-services-menu">
-            <li class="footer-services-menu-item"><a href="#">Доставка</a></li>
-            <li class="footer-services-menu-item"><a href="#">Гарантия</a></li>
-            <li class="footer-services-menu-item"><a href="#">Контакты</a></li>
-          </ul>
+            <ul class="footer-services-menu">
+              <li class="footer-services-menu-item"><a href="#">Доставка</a></li>
+              <li class="footer-services-menu-item"><a href="#">Гарантия</a></li>
+              <li class="footer-services-menu-item"><a href="#">Контакты</a></li>
+            </ul>
 
-          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        </div>
+            <a class="telephone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          </div>
 
-        <div class="footer-bottom-row">
-          <ul class="social">
-            <li class="social-item fb"><a href="https://www.facebook.com/" target="_blank">Фейсбук</a></li>
-            <li class="social-item inst"><a href="https://www.instagram.com/" target="_blank">Инстаграм</a></li>
-            <li class="social-item tw"><a href="https://twitter.com/" target="_blank">Твиттер</a></li>
-          </ul>
+          <div class="footer-bottom-row">
+            <ul class="social">
+              <li class="social-item fb">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Социальная сеть Фейсбук"></a>
+              </li>
 
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Htmlacademy</a>
-        </div>
-      </nav>
+              <li class="social-item inst">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Социальная сеть Инстаграм"></a>
+              </li>
+
+              <li class="social-item tw">
+                <a href="https://twitter.com/" target="_blank" aria-label="Социальная сеть Твиттер"></a>
+              </li>
+            </ul>
+
+            <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Сайт компании Htmlacademy"></a>
+          </div>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
