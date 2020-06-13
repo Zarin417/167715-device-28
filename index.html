@@ -12,45 +12,57 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-navigation">
-          <a class="logo index-logo">
+          <a class="logo index-logo" tabindex="0">
             <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Device">
           </a>
 
           <div class="navigation-top-row">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label>
-                <span class="visually-hidden">Поиск по сайту</span>
-                <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-              </label>
-              <button class="search-btn" type="submit">Найти</button>
+              <label for="search"><span class="visually-hidden">Поиск по сайту</span></label>
+              <div class="search-field-wrapper">
+                <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <button class="search-btn" type="submit">Найти</button>
+              </div>
             </form>
 
             <ul class="user-actions">
-              <li class="user-actions-item"><a href="#">Войти</a></li>
-              <li class="user-actions-item"><a href="#">Сравнить</a></li>
-              <li class="user-actions-item"><a href="#">Корзина</a></li>
+              <li class="user-actions-item profile">
+                <ul class="profile-wrapper">
+                <li class="user-actions-item login-item"><a href="#">Войти</a></li>
+                </ul>
+              </li>
+              <li class="user-actions-item compare-item"><a href="#">Сравнить</a></li>
+              <li class="user-actions-item basket-item"><a href="#">Корзина</a></li>
             </ul>
           </div>
 
           <div class="navigation-bottom-row">
             <ul class="catalog">
-              <li>
-                <a class="have-drop-down">Каталог товаров</a>
-                <ul class="catalog-submenu visually-hidden">
-                  <li class="catalog-submenu-item"><a href="#">Виртуальная реальность</a></li>
-                  <li class="catalog-submenu-item"><a href="#">Фитнес-браслеты</a></li>
-                  <li class="catalog-submenu-item"><a href="#">Квадрокоптеры</a></li>
-                  <li class="catalog-submenu-item"><a href="catalog_monopods.html">Моноподы для селфи</a></li>
-                  <li class="catalog-submenu-item"><a href="#">Умные часы</a></li>
-                  <li class="catalog-submenu-item"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-item">
+                <a class="have-drop-down" tabindex="0">Каталог товаров</a>
+                <ul class="catalog-submenu">
+                  <li class="catalog-submenu-items">
+                    <a href="#">Виртуальная реальность</a>
+                    <a href="catalog_monopods.html">Моноподы для селфи</a>
+                    <a href="#">Экшн-камеры</a>
+                  </li>
+
+                  <li class="catalog-submenu-items">
+                    <a href="#">Фитнес-браслеты</a>
+                    <a href="#">Умные часы</a>
+                  </li>
+
+                  <li class="catalog-submenu-items">
+                    <a href="#">Квадрокоптеры</a>
+                  </li>
                 </ul>
               </li>
             </ul>
 
             <ul class="services-menu">
-              <li class="services-menu-item"><a href="#">Доставка</a></li>
-              <li class="services-menu-item"><a href="#">Гарантия</a></li>
-              <li class="services-menu-item"><a href="#">Контакты</a></li>
+              <li class="services-menu-item delivery-item"><a href="#">Доставка</a></li>
+              <li class="services-menu-item warranty-item"><a href="#">Гарантия</a></li>
+              <li class="services-menu-item contacts-item"><a href="#">Контакты</a></li>
             </ul>
           </div>
         </nav>
@@ -66,11 +78,11 @@
           <h2 class="visually-hidden">Популярные товары</h2>
 
           <ul class="slider-products-list">
-            <li class="slider-products-item slide-1 active">
+            <li class="slider-products-item slide-1 active" data-number="01">
               <div class="slider-img-wrapper">
                 <img src="img/slider_top_monopod.png" width="384" height="486" alt="Самая длинная палка для селфи">
               </div>
-              <div class="slider-products-description slide-1">
+              <div class="slider-products-description">
                 <b>
                   Делай селфи,<br>
                   как Бен Стиллер!
@@ -99,17 +111,18 @@
               </div>
             </li>
 
-            <li class="slider-products-item slide-2 disabled">
-              <div class="slider-img-wrapper slide-2">
+            <li class="slider-products-item slide-2" data-number="02">
+              <div class="slider-img-wrapper">
                 <img src="img/slider_top_watch.png" width="345" height="483" alt="Мотивирующий фитнес-браслет">
               </div>
-              <div class="slider-products-description slide-2">
+              <div class="slider-products-description">
                 <b>
                   Худеем<br>
                   правильно!
                 </b>
                 <p>
-                  Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                  не пропускать занятия и соблюдать диету.
                 </p>
                 <a class="btn" href="#">Подробнее</a>
                 <dl class="slider-products-characteristics">
@@ -121,8 +134,8 @@
               </div>
             </li>
 
-            <li class="slider-products-item slide-3 disabled">
-              <div class="slider-img-wrapper slide-3">
+            <li class="slider-products-item slide-3" data-number="03">
+              <div class="slider-img-wrapper">
                 <img src="img/slider_top_drone.png" width="526" height="334" alt="Квадрокоптер оснащенный лазером">
               </div>
               <div class="slider-products-description slide-3">
@@ -315,6 +328,7 @@
       </section>
     </main>
 
+      <!-- Футер -->
     <footer class="page-footer">
       <div class="container">
         <nav class="footer-navigation">
@@ -324,9 +338,13 @@
             </a>
 
             <ul class="footer-user-actions">
-              <li class="footer-user-actions-item"><a href="#">Войти</a></li>
-              <li class="footer-user-actions-item"><a href="#">Сравнить</a></li>
-              <li class="footer-user-actions-item"><a href="#">Корзина</a></li>
+              <li class="footer-user-actions-item profile">
+                <ul class="profile-wrapper">
+                  <li class="footer-user-actions-item login-item"><a href="#">Войти</a></li>
+                </ul>
+              </li>
+              <li class="footer-user-actions-item compare-item"><a href="#">Сравнить</a></li>
+              <li class="footer-user-actions-item basket-item"><a href="#">Корзина</a></li>
             </ul>
           </div>
 
