@@ -236,7 +236,7 @@
               </p>
             </li>
 
-            <li class="slider-services-descriptions-item warranty disabled">
+            <li class="slider-services-descriptions-item warranty">
               <h3>Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом —<br>
@@ -245,7 +245,7 @@
               </p>
             </li>
 
-            <li class="slider-services-descriptions-item credit disabled">
+            <li class="slider-services-descriptions-item credit">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты<br>
@@ -322,7 +322,7 @@
             <a class="map-link" href="#">
               <img class="contacts-map" src="img/map-small.png" width="560" height="222" alt="Карта проезда в офис компании Девайс">
             </a>
-            <a class="btn about-us-btn" href="#">Напишите нам</a>
+            <a class="btn write-us-btn " href="#">Напишите нам</a>
           </section>
         </div>
       </section>
@@ -382,40 +382,41 @@
     </footer>
 
     <!-- Секции поп-апов -->
-    <section class="write-us visually-hidden">
+    <section class="write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
 
       <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label>
-            Ваше имя:
-            <input type="text" name="user-name" placeholder="Имя Фамилия" required>
-          </label>
+          <label for="letter-user-name">Ваше имя:</label>
+          <input class="letter-user-name" type="text" name="user-name" id="letter-user-name" placeholder="Имя Фамилия" required>
         </p>
 
         <p>
-          <label>
-            Ваш e-mail:
-            <input type="email" name="user-email" placeholder="email@example.com" required>
-          </label>
+          <label for="letter-email">Ваш e-mail:</label>
+          <input class="letter-email" type="email" name="user-email" id="letter-email" placeholder="email@example.com" required>
         </p>
 
         <p>
-          <label>
-            Текст письма:
-            <textarea name="letter-content" rows="8" cols="50" placeholder="В свободной форме"></textarea>
-          </label>
+          <label for="letter-text">Текст письма:</label>
+          <textarea class="letter-text" name="letter-content" id="letter-text" placeholder="В свободной форме" required></textarea>
         </p>
-        <button class="letter-btn" type="submit" name="send-letter">Отправить</button>
+        <button class="btn letter-btn" type="submit" name="send-letter">Отправить</button>
       </form>
-      <button class="btn-close" type="button" name="close">Закрыть</button>
+      <button class="btn-close" type="button" name="close" aria-label="Закрыть окно"></button>
     </section>
 
-    <section class="pop-up-map visually-hidden">
+    <section class="pop-up-map">
       <h2 class="visually-hidden">Карта проезда</h2>
 
-      <img src="img/map-big.png" width="994" height="593" alt="Карта проезда в офис компании Девайс">
-      <button class="btn-close" type="button" name="close">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1124447364864!2d37.52831341139368!
+      3d55.68703279116172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x33a86a384d7fc509!
+      2sEdgo!5e0!3m2!1sru!2sua!4v1592690489513!5m2!1sru!2sua" width="960" height="550" allowfullscreen="">
+      </iframe>
+      <img src="img/map-big.png" width="960" height="550" alt="Карта проезда в офис компании Девайс">
+      <button class="btn-close" type="button" name="close" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/write-us-popup.js"></script>
+    <script src="js/map-popup.js"></script>
   </body>
 </html>
