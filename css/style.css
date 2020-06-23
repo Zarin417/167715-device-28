@@ -90,8 +90,16 @@
   box-shadow: 0 0 0 2px var(--basic-black);
 }
 
+.page a:active {
+  box-shadow: none;
+}
+
 .footer-navigation a:focus {
   box-shadow: 0 0 0 2px var(--basic-white);
+}
+
+.footer-navigation a:active {
+  box-shadow: none;
 }
 
 .page ul {
@@ -193,6 +201,10 @@
   margin-right: 40px;
 }
 
+.search-form input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
 .search-form label {
   position: relative;
 
@@ -270,11 +282,12 @@
 
 .search-form #search:focus + .search-btn {
   opacity: 1;
+  cursor: pointer;
 }
 
 .search-form .search-btn:focus {
-  color: rgba(0, 0, 0, 1);
   opacity: 1;
+  cursor: pointer;
 }
 
 .search-form .search-btn:focus::after {
@@ -291,7 +304,8 @@
   box-shadow: inset 0 -2px  var(--basic-black);
 }
 
-.search-form .search-btn:hover {
+.search-form .search-btn:hover,
+.search-form .search-btn:focus {
   color: var(--basic-white);
   background-color: var(--basic-black);
 }
@@ -713,7 +727,7 @@
 
 .slider-products-controls {
   position: absolute;
-  top: 375px;
+  top: 370px;
   right: 108px;
 
   display: flex;
@@ -998,12 +1012,15 @@
 }
 
   /* Логотипы вендоров */
+.vendors {
+  margin-bottom: 86px;
+}
+
 .vendors-list {
   display: flex;
   flex-wrap: wrap;
 
   margin: 0;
-  margin-bottom: 86px;
   padding: 0;
 }
 
@@ -1031,6 +1048,7 @@
 .vendors-list-item a:focus {
   filter: grayscale(0);
   opacity: 1;
+  transition: 0.3s;
 }
 
  /* Информация о компании */
@@ -2310,6 +2328,7 @@
 .btn-close:hover,
 .btn-close:focus {
   opacity: 1;
+  cursor: pointer;
 }
 
 .btn-close:active {
