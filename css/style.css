@@ -1999,14 +1999,28 @@
   left: 0;
   z-index: 1;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 
   width: 360px;
   height: 380px;
   padding-top: 171px;
-  opacity: 0;
+}
+
+.product-item figure:hover,
+.product-item figure:focus {
+  outline: none;
+}
+
+.product-item figure:hover .product-hover-btns,
+.product-item figure:focus-within .product-hover-btns {
+  display: flex;
+}
+
+.product-item figure:hover img,
+.product-item figure:focus-within img {
+  opacity: 0.7;
 }
 
 .to-basket-btn {
@@ -2046,6 +2060,7 @@
 
 .to-compare-btn:active {
   opacity: 0.2;
+  box-shadow: none;
 }
 
 .product-hover-btns:hover {
