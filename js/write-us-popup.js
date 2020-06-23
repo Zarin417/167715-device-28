@@ -5,6 +5,7 @@ var letterForm = writeUsPopup.querySelector(".letter-form");
 var letterUserName = writeUsPopup.querySelector(".letter-user-name");
 var letterEmail = writeUsPopup.querySelector(".letter-email");
 var letterText = writeUsPopup.querySelector(".letter-text");
+var submitButton = writeUsPopup.querySelector(".letter-btn");
 
 var isStorageSupport = true;
 var storage = "";
@@ -54,3 +55,27 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// Валидация формы перед отправкой
+submitButton.addEventListener("click", function (evt) {
+  if(letterUserName.value === "") {
+    letterUserName.classList.add("wrong-value");
+    evt.preventDefault();
+  } else {
+    letterUserName.classList.remove("wrong-value");
+  }
+
+  if(letterEmail.value === "") {
+    letterEmail.classList.add("wrong-value");
+    evt.preventDefault();
+  } else {
+    letterEmail.classList.remove("wrong-value");
+  }
+
+  if(letterText.value === "") {
+    letterText.classList.add("wrong-value");
+    evt.preventDefault();
+  } else {
+    letterText.classList.remove("wrong-value");
+  }
+})
