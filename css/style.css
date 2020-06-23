@@ -2177,6 +2177,9 @@
 .footer-logo.inner-page:hover,
 .footer-logo.inner-page:focus {
   opacity: 0.6;
+}
+
+.footer-logo.inner-page:focus {
   box-shadow: 0 0 0 2px var(--special-yellow);
 }
 
