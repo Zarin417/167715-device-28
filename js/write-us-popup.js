@@ -57,7 +57,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 // Валидация формы перед отправкой
-submitButton.addEventListener("click", function (evt) {
+letterForm.addEventListener("submit", function (evt) {
   if(letterUserName.value === "") {
     letterUserName.classList.add("wrong-value");
     evt.preventDefault();

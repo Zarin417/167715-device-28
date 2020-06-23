@@ -279,7 +279,7 @@
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--basic-black);
 
   border: 2px solid var(--basic-black);
   background-color: transparent;
@@ -568,7 +568,7 @@
   flex-grow: 1;
 }
 
-  /*!*Слайдер топ-товаров*!*/
+  /* Слайдер топ-товаров */
 .slider-products {
   margin-bottom: 95px;
 }
@@ -755,6 +755,10 @@
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+}
+
+.slider-products-control:focus {
+  outline: none;
 }
 
 .slider-products-control.active::after {
@@ -1714,7 +1718,7 @@
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: -36px;
 
   width: 9px;
@@ -2280,6 +2284,7 @@
   letter-spacing: 3.6px;
 
   border: none;
+  cursor: pointer;
 }
 
   /* Map pop-up */
