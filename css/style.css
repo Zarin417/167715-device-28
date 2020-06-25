@@ -1,8 +1,10 @@
   /* Переменные цвета */
 :root {
   --basic-black: #000000;
+  --basic-black-rgb: 0, 0, 0;
   --basic-dark: #363636;
   --basic-white: #ffffff;
+  --basic-white-rgb: 255, 255, 255;
   --basic-grey: #464646;
   --basic-half-grey: #7e7e7e;
   --basic-grey-light: #e5e5e5;
@@ -133,7 +135,7 @@
 }
 
 .btn:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .btn::before {
@@ -318,7 +320,7 @@
 }
 
 .search-form .search-btn:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(var(--basic-white-rgb), 0.3);
 }
 
 .user-actions {
@@ -479,11 +481,17 @@
 
   width: 15px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .have-drop-down::after {
   transform: rotate(90deg);
+}
+
+.navigation-bottom-row .have-drop-down:hover,
+.navigation-bottom-row .have-drop-down:focus {
+  color: rgba(var(--basic-black-rgb), 0.6);
+  opacity: 1;
 }
 
 .catalog-submenu {
@@ -759,6 +767,7 @@
 
 .slider-products-control:focus {
   outline: none;
+  box-shadow: 0 0 0 2px var(--special-yellow-dark);
 }
 
 .slider-products-control.active::after {
@@ -870,7 +879,7 @@
 }
 
 .popular-categories-item a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .popular-categories-item a:active::after {
@@ -1171,7 +1180,7 @@
 }
 
 .contacts .map-link:focus {
-  box-shadow: 0 0 0 2px var(--special-yellow)
+  box-shadow: 0 0 0 2px var(--special-yellow);
 }
 
  /* Футер */
@@ -1566,8 +1575,6 @@
 }
 
 .filter-form fieldset {
-  position: relative;
-
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
@@ -1575,13 +1582,17 @@
   border: none;
 }
 
-.filter-form fieldset::before {
+.filter-form legend {
+  position: relative;
+}
+
+.filter-form legend::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
 
-  width: 100%;
+  width: 200px;
   height: 2px;
 
   background-color: var(--basic-black);
@@ -1614,7 +1625,7 @@
 .range-controls .scale {
   height: 2px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(var(--basic-black-rgb), 0.2);
 }
 
 .range-controls .bar {
@@ -1635,7 +1646,7 @@
   border: 8px solid var(--basic-white);
   border-radius: 50%;
   background-color: var(--toggle-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 2px 2px rgba(var(--basic-black-rgb), 0.18);
   cursor: pointer;
 }
 
@@ -1968,8 +1979,8 @@
   line-height: 15px;
   text-transform: uppercase;
 
-  color: rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(var(--basic-black-rgb), 0.3);
+  border: 2px solid rgba(var(--basic-black-rgb), 0.3);
   border-radius: 50%;
 }
 
@@ -2165,7 +2176,7 @@
 }
 
 .pagination-btn:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(var(--basic-black-rgb), 0.3);
 }
 
 .pagination-btn.disabled:hover {
@@ -2208,7 +2219,7 @@
   padding-left: 100px;
 
   background-color: var(--basic-white);
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 16px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .letter-form {
@@ -2245,7 +2256,7 @@
 
 .letter-form input::placeholder,
 .letter-form textarea::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(var(--basic-black-rgb), 0.4);
 }
 
 .letter-form input,
@@ -2306,7 +2317,7 @@
   margin: auto;
 
   background-color: var(--basic-white);
-  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 16px rgba(var(--basic-black-rgb), 0.15);
 }
 
 .pop-up-map iframe {
