@@ -61,6 +61,7 @@ letterForm.addEventListener("submit", function (evt) {
   if(letterUserName.value === "") {
     letterUserName.classList.add("wrong-value");
     evt.preventDefault();
+    writeUsPopup.classList.add("error-shake");
   } else {
     letterUserName.classList.remove("wrong-value");
   }
@@ -68,6 +69,7 @@ letterForm.addEventListener("submit", function (evt) {
   if(letterEmail.value === "") {
     letterEmail.classList.add("wrong-value");
     evt.preventDefault();
+    writeUsPopup.classList.add("error-shake");
   } else {
     letterEmail.classList.remove("wrong-value");
   }
@@ -75,6 +77,7 @@ letterForm.addEventListener("submit", function (evt) {
   if(letterText.value === "") {
     letterText.classList.add("wrong-value");
     evt.preventDefault();
+    writeUsPopup.classList.add("error-shake");
   } else {
     letterText.classList.remove("wrong-value");
   }
